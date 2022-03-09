@@ -66,10 +66,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     global.conns.push(conn)
   } else throw 'Cannot make a bot inside a bot!\n\nhttps://wa.me/' + global.conn.user.jid.split`@`[0] + '?text=.jadibot'
 }
-handler.help = ['getbot']
 handler.tags = ['jadibot']
 
-handler.command = /^getbot$/i
 
 handler.limit = true
 
