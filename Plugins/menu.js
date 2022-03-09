@@ -10,6 +10,7 @@ let tags = {
   'xp': 'EXP & LIMIT',
   'sticker': 'STICKER',
   'admin': 'ADMIN',
+  'antibitch': 'ANTIPORN',
   'group': 'GROUP',
   'premium': 'PREMIUM',
   'anime': 'ANIME',
@@ -25,23 +26,22 @@ let tags = {
   'exp': 'REGISTER',
   'vote': 'VOTING',
   'absen': 'ABSENT',
-  'jadibot': 'GET BOT',
+  'jadibot': ' ~BOT~ (DEFEKT)',
   'anonymous': 'ANONYMOUS CHAT',
   'owner': 'OWNER',
   'host': 'HOST',
-  'advanced': 'ADVANCED',
 }
 const defaultMenu = {
   before: `
 
 Member name: %name,
 
-+ Role: *%role*
-🛕 Level: *%level* 
-☕ Total XP: *%totalexp*
 
-〽️ Prefix: *%p*
-📅 Date: *%week, %date*
+ *Level:* _*%level*_ 
+ *Total XP:* _*%totalexp*_
+
+ *Prefix:* _*%p*_
+ *Date:* _*%week, %date*_
 
 ↓ Alle verwendbaren Befehle sind unten aufgelistet↓ 
 
@@ -49,7 +49,7 @@ Member name: %name,
   header: '        *━━❰･%category･❱━━*',
   body: ' ➤ %cmd %islimit %isPremium',
   footer: ' ',
-  after: `*Bot zurzeit noch in Beta Version!* 
+  after: `*Bot zurzeit noch in Beta Version!*
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
