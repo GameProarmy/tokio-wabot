@@ -14,7 +14,7 @@ apt install git -y
 apt install nodejs -y
 apt install ffmpeg -y
 apt install imagemagick -y
-git clone https://github.com/itsajaygaur/tokio-wabot
+git clone https://github.com/gameproarmy/tokio-wabot
 cd tokio-wabot
 npm install
 npm update
@@ -49,7 +49,7 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/itsajaygaur/tokio-wabot
+git clone https://github.com/gameproarmy/tokio-wabot
 cd tokio-wabot
 npm install
 npm update
