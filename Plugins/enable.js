@@ -164,7 +164,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       break
     default:
       if (!/[01]/.test(command)) throw `
-List option:
+
 
 | welcome 
 | delete 
@@ -183,7 +183,7 @@ List option:
 | simi
 | viewonce
 
-Example:
+	Beispiel:
 ${usedPrefix}enable welcome
 ${usedPrefix}disable welcome
 `.trim()
