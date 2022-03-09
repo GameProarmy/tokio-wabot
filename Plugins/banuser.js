@@ -1,12 +1,12 @@
 let handler = async (m, { conn, text }) => {
-    if (!text) throw 'Who wants to be banned ?'
+    if (!text) throw 'Keine nummer erkannt!'
     let who
     if (m.isGroup) who = m.mentionedJid[0]
     else who = m.chat
     if (!who) throw 'Tag one'
     let users = global.db.data.users
     users[who].banned = true
-    conn.reply(m.chat, `successfully banned`, m)
+    conn.reply(m.chat, `User erfolgreich von bot gebannt`, m)
 }
 handler.help = ['ban']
 handler.tags = ['owner']
