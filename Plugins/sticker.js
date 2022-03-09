@@ -20,16 +20,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       stiker = await sticker(img, false, global.packname, global.author)
     } else if (args[0]) {
       if (isUrl(args[0])) stiker = await sticker(false, args[0], global.packname, global.author)
-      else return m.reply('Inavlid URL!')
+      else return m.reply('URL nicht erkannt!')
     }
   } finally {
     if (stiker) conn.sendMessage(m.chat, stiker, MessageType.sticker, {
       quoted: m
     })
-    else throw 'Conversion failed'
+    else throw 'nicht erkannt!'
   }
 }
-handler.help = ['sticker (caption|reply media)', 'sticker <url>', 'stickergif (caption|reply media)', 'stickergif <url>']
+handler.help = ['sticker (caption|reply media)', 'sticker <url>', 'sticker (caption|reply media)', 'sticker <url>']
 handler.tags = ['sticker']
 handler.command = /^s(tic?ker)?(gif)?(wm)?$/i
 
