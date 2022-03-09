@@ -21,6 +21,6 @@ let handler = async (m, { conn, command }) => {
 		})
 	} else throw json
 }
-handler.command = /^(hug|pat|lick|slap|bully|kiss|cry|cuddle|smug|highfive|bonk|yeet|blush|wave|smile|handhold|nom|bite|glomp|kill|cringe|kick|wink|happy|poke|dance)$/i
+handler.command = /^(hug|pat|lick|slap|bully|kiss|cry|cuddle|smug|highfive|bonk|yeet|blush|wave|smile|handhold|nom|bite|glomp|kill|cringe|tritt|wink|happy|poke|dance)$/i
 
 module.exports = handler
