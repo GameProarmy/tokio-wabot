@@ -8,7 +8,7 @@ let handler = async function (m, { text, usedPrefix }) {
   if (!name) throw 'Name cannot be empty (Alphanumeric)'
   if (!age) throw 'Age cannot be empty (number)'
   age = parseInt(age)
-  if (age > 120) throw 'Age too old 😂'
+  if (age > 120) throw 'Age too old ðŸ˜‚'
   if (age < 5) throw 'Age too low ._.'
   user.name = name.trim()
   user.age = age
@@ -18,11 +18,11 @@ let handler = async function (m, { text, usedPrefix }) {
   m.reply(`
 Register successfully!
 
-╭─「 Info 」
-│ Name: ${name}
-│ Age: ${age} 
-│ SN: ${sn}
-╰────
+â•­â”€ã€Œ Info ã€
+â”‚ Name: ${name}
+â”‚ Age: ${age} 
+â”‚ SN: ${sn}
+â•°â”€â”€â”€â”€
 `.trim())
 }
 handler.help = ['reg/register'].map(v => v + ' <name>.<age>')
